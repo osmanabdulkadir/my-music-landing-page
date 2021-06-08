@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: rgb(41, 37, 37);
+}
+ nav li{
+     float: left;
+ }
+
+ nav li a{
+     display: block;
+     color: white;
+     padding: 16px;
+    text-decoration: none;
+ }
+ nav  li a:hover{
+    background-color: rgb(180, 170, 170);
+    padding-bottom: 5px;
+ }
+
+ #Overview{
+     font-size: 24px;
+     text-align: center;
+     background-image: url("https://images.pexels.com/photos/210766/pexels-photo-210766.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200");
+     height: 90vh;
+     color: white;
+     
+     line-height: 2;
+ }
+ #Overview h1{
+     font-size: 70px;
+     padding: 45px;
+ }
+ #Overview p{
+     font-size: 17px;
+ }
+
+ #Music{
+     display: inline-block;
+     background-color: #252529;
+     color: white;
+     margin: 0;
+     height: 120vh;
+     text-align: center;
+
+
+ }
+ #Music button{
+     background-color: red;
+     color: white;
+     padding: 10px 25px 10px 25px;
+     box-shadow: none;
+     border: none
+ }
+ #Music button:hover{
+     cursor: pointer;
+ }
+#Music h1{
+    font-size: 45px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+
+}
+#Music h2{
+    font-size: 35px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+#Music p{
+    font-stretch: condensed;
+    font-size: 22px;
+    padding: 10px 55px 5px 55px;
+}
+
+#movie{
+    display: block;
+    height: 100vh;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+
+}
+#movie #btn2{
+padding: 25px 45px 25px 45px;
+}
+#movie #btn2:hover{
+    cursor: pointer;
+}
+#movie h1{
+    padding: 35px 45px 45px 35px;
+    font-size: 30px;
+
+}
+#movie p {
+    padding: 45px 75px 45px 75px;
+    font-size: 20px;
+}
+#movie button{
+    background-color: blue;
+    color:white;
+    padding: 25px 10 25 10;
+
+}
+
+    
+#Video{
+    display: flex;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 100px;
+    background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhMVFhUVFxUXFRUXFRcVFRUVFRUXFxUVFRcYHSggGBolHRcVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFQ8PFS0dFR0tLSstLS0rKystLS0tLS0tLS0tLSs1LS0tLS0rLS0tLS0tLS0tLS03Ny0tLS0tNy03K//AABEIALEBHAMBIgACEQEDEQH/xAAcAAADAQEBAQEBAAAAAAAAAAAAAQIDBAYFBwj/xAA2EAACAgEBBAcGBAcBAAAAAAAAAQIRAxIEITFRBQZBYZGx8BNTcYGSoTJSweEVIkJDYrLxFP/EABgBAQEBAQEAAAAAAAAAAAAAAAABAgME/8QAHxEBAQEAAQUAAwAAAAAAAAAAABEBAgMSE1FhFCFB/9oADAMBAAIRAxEAPwD8RGkCRa9czqxpUOhpDaKlJA0Oi0VKzoEjShUIVI0i9BVCJWdFLh67B6e3v+fgJlCoKKoaQRNeu4VGlchaQVFBRekVAqVEGi1zJoFSIuhUFqWgoqgohUpev1FRQqBUgVQgqaBx9Lf9x0FEVKQiqBoFSIpoTIpUKhgAy19+f6USikVNNIYUNIrISGwGVAmNx7QRQQRGhJDZRFDSKoKBRGNlCRpFlSpUQcTRRXP1yJEE6SWjXiDgIMaE0aNCaAzoKLkhURUAU0FAqKFRaQqC1LFRbJIJoVF0CQVDQi3ERCoBoqiSKkCmKgqkUCQys7oSKQIaRUJFbgQys0UMdDLEpUOiqBIsSpSK0lgkWFRQUaoUo1+whUIpMKHQKdFMiwkyLSmiZxLontCooKGxpBEUSzWhSiSKzoC9IUIVm0Et5biTpAihGulkyXdx4eJFrNoTLYqIqBFMQVIi2hMiqSLS5PnvV70JDRpgJFUFFJFjNJIdFfAaRYlKhpFUOis1KQ0ikh0UpDoaiVQiVKQ6K0gkItRQaS9I2iwZuIJGgURWbiJRNhtdxFcrHGJpOJDiwAECEyLQ2DRLKTKlS/IljkTRFJsllUKiKkTRYqIqBFkgSIqhEVpQ0gSLSNMbpJFJDoo1GaSKoEi1EsZpUNRKUSkixKmhpFaStJUQojSNKDSFZpDo10k6QIoKLoKAjSFF0KgqUgKYqJCluFNJlpfr6+JIjVZuG4hxN5RJ0kGLjXYKt5vJC0JAjCiWjVjlDmRcxgBo0S0FZ0DRTiKiCKFRbQURUUKjQkiqSLSBIujblukkUkNItIqEkXGA0i1E0ylRK0lpFKIEaSlEtRLiijJRK0miiUoAY0Gk20C0gYaQ0m2kWkDGhNG2knSBk4iNXEloKgmjShOJBFgU0Jhali4sdD0ki0LHzNaVb1uITG5Ejea58kKM6OjIxQiQYaSHE6cmKiEEYaQaNJRIItQ0JlkNGdabFJAkaJHRxCRaQ4ouMSoSX/e0tIqMTSMComMSlEuMTRRKM1EtQNVApQKMlApRNlApQCOfQGg6NAOBRyuItB1aCdAHK4CcTpcCHAg53EhxOlxIcQrncROJvpJcSDChUbOJLiFZaQo0aJoghoTRbQUFrOhJGgqJGs1JLjRVBJGWqzeTspGUom7gTOO4Ujn0kmqXh9yZERskaRifOh0lzj4M7MO3Y3218d334DOfHf6m9Pln8dUYmsYigr4G0Ym2YmMTSMS4xNIwKiYwNIwLjA1jAqIjA0jA1jjNY4yjBYyvZnSsZSxlRy+zE8Z2eyE8RRxOBLxnY8ZEsYHG4EOB2SgRKAHHKBDgdcoGbiQcriQ4nTKJDiQc7iQ4nQ4kOIGDRLibOIqIrKhNGjRLQGbRJoyGRUSXMEOSJojWaAJCzO41mmoC9mu0qMhNmdbzXnQADyvQ22fapwf8rru7H8j7ewdMRlunUXz/AKf2PPAb4894scuGcnvIRNowPFbD0nkxcHa/K96/Y9HsPWDFKlO4Pv8Aw+J6OPVzXDl0tx9eMDaMB4qatNNc73Ff+jHFanOCXNySXjZ0rlFwxnRDGcv8TwKeiWWClu3N89638D62KCfAdy9usI4jRYTthgNVgHcva+d7El4j6jwGcsIzkm8Xy5YjOWM+lPCYyxGs1ncfOljMpQPoSxGM4GmXDKBlKJ2ygZSgBxyiZuJ1ygZygQcjiRKJ1SiZyiFcziS0dEombiRWEkQ0buJDRBi0Q0bNENEGTRDRq0TJEVkyWaNENEaxLFY2SZafCAAPI9YAAAAAANVtE1HSpS0virdP4oyAAGmb7NtmTG9WOcoNdsXp8jnAtHseiOv+bHuzxjljzVQmvBU/A9n0d122HJG5ZHiaVuM4u/k42n5n42Brv1ntx+1Y+uHR8mktoW/nDJFfNuNI+vjcJx1QlGUXwlFqS8Ufz8dGybdlxO8WScHzjJx8i51E3hj90yYjkyON6bWrlavwPyXN1n2yUXGW0ZKffT8VvPlvI71W743e++dm/Mx4q/aJwMJwPzDZesW1Y1Uc06/yqf8Aumaz61bW/wC8/oxryibzr4570Ne56V23HghryPdwSXGT5I87svW2EnWSDir3NPUku9cfA8ptO1TyO5zlJ85NvzMTHLr7f03nQ4z9v0F9MbP72IpdJ4Pew+pH5+BfyN9J+Pnt719JYPew+pEPpDD72H1I8KBPPvpfBnt772kXwkn80S0eDHGTXBtF8/xPB9e5cTOSPJYtvyx4Tl435mr6WzVWv7K/IvmxPDr0k929mEc8HuUov4NHl8mWUvxSb+LbIM71vjWdD69Y0Zs85DaJx4Sa+ZqukMn5vsh5sPDr7OSaSttL4nO9rh+ZHyM2eUvxOzMm9X0udL3r7iyxfBp/MD4Y9TJ5fi+L6QABydQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/9k=");
+    height: 100vh;
+    width: 100%;
+}
+#Video h2{
+    padding-top: 55px;
+    font-size: 35px;
+    align-items: center;
+}
+
+#Video p{
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    font-size: 24px;
+
+}
+
+footer{
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: white;
+    text-align: center;
+    background-color: #333333;
+    font-size: 14;
+    height: 25px;
+    width: 100%;
+}
+
+
+#Gift-Cards{
+    display: inline-block;
+    line-height: 30px;
+    height: 70vh;
+    background-color: white;
+    color: black;
+    text-align: left;
+    
+    
+
+}
+#Gift-Cards img{
+    float: left;
+}
+
+
+#Gift-Cards h2{
+    padding-top: 100px;
+    padding-left: 10px;
+    font-size: 28px;
+}
+#Gift-Cards p{
+    
+    padding: 5px;
+    font-size: 22px; 
+   
+}
+ #Gift-Cards #Reedem:hover{
+    cursor: pointer;
+}
+
+#info{
+    display: flex;
+    flex-direction: row;
+    background-color: #333333;
+    color: white;
+    height: 35vh;
+    line-height: 30px;
+    width: 100%;
+    justify-content: start;
+
+}
+#info ul{
+list-style-type: none;
+padding-left: 75px;
+padding-top: 35px;
+
+}
+#info li{
+    list-style-type: none;
+
+}
+#info li a{
+    list-style: none;
+    text-decoration: none;
+    font-size: 16px;
+    color: #5c5a5a;
+
+}
+#info .header{
+    font-size: 25px;
+    color: white;
+}
